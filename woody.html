@@ -104,25 +104,55 @@
     vertical-align: middle;
   }
 
+  .product-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
 
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
 
-    .product-card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-    .product-card:hover {
-      transform: scale(1.03);
-    }
-    .product-img {
-      height: 180px;
-      object-fit: cover;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-    }
+  .product-card img {
+    height: 220px;
+    /* ✅ fixes image size */
+    width: 100%;
+    object-fit: contain;
+    /* ✅ keeps aspect ratio */
+    background: #f8f8f8;
+    /* light background for images */
+    padding: 10px;
+  }
 
+  .product-card .card-body {
+    text-align: center;
+    padding: 15px;
+  }
 
+  .product-card .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    height: 50px;
+    /* ✅ keeps titles uniform height */
+    overflow: hidden;
+  }
+
+  .product-card .card-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 12px;
+  }
+
+  .product-card .btn {
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 
   #promo {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -216,7 +246,7 @@
               <div class="row">
                 <div class="col-md-3">
                   <h6 class="fw-bold">For Men</h6>
-                  <a class="dropdown-item" href="woody.html">Woody</a>
+                  <a class="dropdown-item" href="#">Woody</a>
                   <a class="dropdown-item" href="#">Spicy</a>
                   <a class="dropdown-item" href="#">Fresh</a>
                 </div>
@@ -282,286 +312,61 @@
     </div>
   </nav>
   <!----- Navbar End ----->
+ 
+    <div class="container py-5">
+    <h1 class="text-center mb-4">Woody Male Fragrance</h1>
+    <div class="row g-4">
 
-  <!---Hero section starts-->
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active caro-img">
-        <img src="KOKOAFRAGRANCE.png" class="d-block w-100 " alt="...">
+      <!-- Product 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="product-card">
+          <img src="delina_exclusif.jpg" class="product-img w-100" alt="Wood Chair">
+          <div class="p-3">
+            <h5 class="fw-bold">Woody Male Fragrance</h5>
+            <p class="text-muted">Classic Men perfume</p>
+            <p class="fw-bold text-success">&#8358;1200</p>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item caro-img">
-        <img src="skincare.png" class="d-block w-100 " alt="...">
+
+      <!-- Product 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="product-card">
+          <img src="delina_exclusif.jpg" class="product-img w-100" alt="Wood Table">
+          <div class="p-3">
+            <h5 class="fw-bold">Woody Male Fragrance</h5>
+            <p class="text-muted">Classic Men perfume</p>
+            <p class="fw-bold text-success">&#8358;2500</p>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item caro-img">
-        <img src="fragr1.jpg" class="d-block w-100 " alt="...">
+
+      <!-- Product 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="product-card">
+          <img src="delina_exclusif.jpg" class="product-img w-100" alt="Wood Shelf">
+          <div class="p-3">
+            <h5 class="fw-bold">Woody Male Fragrance</h5>
+            <p class="text-muted">Classic Men perfume</p>
+            <p class="fw-bold text-success">&#8358;9500</p>
+          </div>
+        </div>
       </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="product-card">
+          <img src="delina_exclusif.jpg" class="product-img w-100" alt="Wood Bed">
+          <div class="p-3">
+            <h5 class="fw-bold">Woody Male Fragrance</h5>
+            <p class="text-muted">Classic Men perfume</p>
+            <p class="fw-bold text-success">&#8358;4800</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-
-  <!--Hero Section Ends-->
-
-  <!----Product card Starts-->
-  <div class="container my-5">
-    <div class="row" id="product-list">
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="Lattafa-Asad.webp" class="card-img-top" alt="Product 1" />
-          <div class="card-body">
-            <h5 class="card-title">Lattafa Asad EDP 100ml For Men</h5>
-            <p class="card-text">₦30,000.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="armaf_club_de_nuit_intense.jpg" class="card-img-top" alt="Product 2" />
-          <div class="card-body">
-            <h5 class="card-title">
-              Armaf Club de Nuit Intense Man EDP 200ml</h5>
-            <p class="card-text">₦94,000.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="aventus_100ml_1_370x.webp" class="card-img-top" alt="Product 3" />
-          <div class="card-body">
-            <h5 class="card-title">Creed Aventus EDP 100ml for Men</h5>
-            <p class="card-text">₦570,000.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="LattafaMayar.webp" class="card-img-top" alt="Product 1" />
-          <div class="card-body">
-            <h5 class="card-title">Lattafa Mayar EDP 100ml</h5>
-            <p class="card-text">₦32,000.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="delina_exclusif.jpg" class="card-img-top" alt="Product 2" />
-          <div class="card-body">
-            <h5 class="card-title">Parfums De Marly Delina Exclusif EDP 75ml Perfume For Women</h5>
-            <p class="card-text">₦490,000.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="delilah.webp" class="card-img-top" alt="Product 3" />
-          <div class="card-body">
-            <h5 class="card-title">Maison Alhambra Delilah Pour Femme EDP 100ml</h5>
-            <p class="card-text">₦23,000.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="nivea lotion.jpg" class="card-img-top" alt="Product 1" />
-          <div class="card-body">
-            <h5 class="card-title">NIVEA Radiant & Beauty Even Glow Body Lotion For Women - 400ml </h5>
-            <p class="card-text">₦11,635.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="vitamin .jpg" class="card-img-top" alt="Product 2" />
-          <div class="card-body">
-            <h5 class="card-title">Roushun Vitamin C Serum [Anti-Aging Serum]---30ml</h5>
-            <p class="card-text">₦5,000.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="disaargel.jpg" class="card-img-top" alt="Product 3" />
-          <div class="card-body">
-            <h5 class="card-title">Disaar BEAUTY ALOE VERA 99% Soothing - Gel</h5>
-            <p class="card-text">₦10,000.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="lashes.jpg" class="card-img-top" alt="Product 1" />
-          <div class="card-body">
-            <h5 class="card-title">DIY Eyelash Extension Kit Single Cluster False Lashes 280pcs Lash Clusters 8-16mm
-            </h5>
-            <p class="card-text">₦17,769.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="lagirl.jpg" class="card-img-top" alt="Product 2" />
-          <div class="card-body">
-            <h5 class="card-title">
-              LA Girl POWDER, CONCEALER AND PRIMER</h5>
-            <p class="card-text">₦12,000.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card h-100 product-card">
-          <img src="lipgloss.jpg" class="card-img-top " alt="Product 3" />
-          <div class="card-body">
-            <h5 class="card-title"> Mac Meiren High Quality Matte Colorless Lipgloss</h5>
-            <p class="card-text">₦3,000.00 NGN</p>
-            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Pagination -->
-    <nav>
-      <ul class="pagination justify-content-center mt-4" id="pagination"></ul>
-    </nav>
-  </div>
-  <!----Product Card end-->
-
-  <!----Promo section starts--->
-  <section id="promo" class="py-5">
-    <div class="container text-center">
-      <h2 class="mb-4">Special Offer</h2>
-      <p class="mb-4">Get 20% off on your first purchase!</p>
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Shop Now
-      </button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Shop Now
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="promoimage11.jpeg" alt="" class="img-fluid" />
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---- Promo Section ends---->
-
-  <!-- Testimonial Section Start -->
-  <section id="testimonials" class="py-5 bg-light">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">What Our Customers Say</h2>
-        <p class="text-muted">
-          Real reviews from people who love Kokoa Fragrance
-        </p>
-      </div>
-
-      <!-- Bootstrap Carousel -->
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- Testimonial 1 -->
-          <div class="carousel-item active">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <div class="card border-0 shadow p-4 text-center">
-                  <img src="test1.jpg" class="rounded-circle mx-auto mb-3" alt="Customer 1" width="80" height="80"
-                    style="object-fit: cover" />
-                  <p class="mb-3 fst-italic">
-                    "Absolutely love the fragrance! It lasts all day and I get
-                    compliments every time."
-                  </p>
-                  <h6 class="fw-bold mb-0">— Ben Johnson</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 2 -->
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <div class="card border-0 shadow p-4 text-center">
-                  <img src="test2.jpg" class="rounded-circle mx-auto mb-3" alt="Customer 2" width="80" height="80"
-                    style="object-fit: cover" />
-                  <p class="mb-3 fst-italic">
-                    "Kokoa's perfumes are a must-have in my collection.
-                    Elegant, fresh, and luxurious."
-                  </p>
-                  <h6 class="fw-bold mb-0">— Sarah Lee</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <div class="card border-0 shadow p-4 text-center">
-                  <img src="test3.jpg" class="rounded-circle mx-auto mb-3" alt="Customer 3" width="80" height="80"
-                    style="object-fit: cover" />
-                  <p class="mb-3 fst-italic">
-                    "Great skincare line too! My skin feels smooth and
-                    hydrated. Highly recommend!"
-                  </p>
-                  <h6 class="fw-bold mb-0">— Goodluck Bello</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-  <!-- Testimonial Section End -->
 
   <!-- Footer section Start -->
   <footer class="footer">
@@ -784,75 +589,6 @@
       });
     });
   </script>
-
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const products = document.querySelectorAll("#product-list .col-md-3");
-    const itemsPerPage = 8; // ✅ Show 8 products per page
-    const pagination = document.getElementById("pagination");
-
-    function showPage(page) {
-      let start = (page - 1) * itemsPerPage;
-      let end = start + itemsPerPage;
-
-      products.forEach((product, index) => {
-        product.style.display = (index >= start && index < end) ? "block" : "none";
-      });
-
-      // Scroll to top of products when switching page
-      document.getElementById("product-list").scrollIntoView({ behavior: "smooth" });
-    }
-
-    function setupPagination() {
-      let pageCount = Math.ceil(products.length / itemsPerPage);
-      pagination.innerHTML = "";
-
-      // Previous button
-      let prev = document.createElement("li");
-      prev.classList.add("page-item");
-      prev.innerHTML = `<a class="page-link" href="#">Previous</a>`;
-      pagination.appendChild(prev);
-
-      // Page numbers
-      for (let i = 1; i <= pageCount; i++) {
-        let li = document.createElement("li");
-        li.classList.add("page-item");
-        li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
-        li.addEventListener("click", () => {
-          showPage(i);
-          document.querySelectorAll("#pagination li").forEach(li => li.classList.remove("active"));
-          li.classList.add("active");
-        });
-        pagination.appendChild(li);
-      }
-
-      // Next button
-      let next = document.createElement("li");
-      next.classList.add("page-item");
-      next.innerHTML = `<a class="page-link" href="#">Next</a>`;
-      pagination.appendChild(next);
-
-      // Default show page 1
-      showPage(1);
-      pagination.querySelectorAll("li")[1].classList.add("active");
-
-      // Prev/Next functionality
-      prev.addEventListener("click", () => {
-        let currentPage = Number(document.querySelector("#pagination li.active a").textContent);
-        if (currentPage > 1) pagination.querySelectorAll("li")[currentPage - 1].querySelector("a").click();
-      });
-
-      next.addEventListener("click", () => {
-        let currentPage = Number(document.querySelector("#pagination li.active a").textContent);
-        if (currentPage < pageCount) pagination.querySelectorAll("li")[currentPage + 1].querySelector("a").click();
-      });
-    }
-
-    setupPagination();
-  });
-</script>
 
 
 
